@@ -1,0 +1,136 @@
+.dash-container{
+    width: 95%;
+    margin: auto;
+    
+}
+.dash-top-container{
+    display: block;
+    display: flex;
+}
+.dash-data-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.dash-title-section{
+    font-family: Roboto;
+    text-align: left;
+    display: inline-block;
+    width: 49%;
+}
+.dash-title{
+    font-size: 1.8em;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    margin-bottom: -5px;
+}
+
+.dash-subtitle{
+    font-size: 0.8em;
+    color: #a7a3ac;
+}
+
+.dash-dates-container{
+   display: inline-block;
+   width: 49%;
+   text-align: right;
+}
+
+.dash-data-container{
+    display: block;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2em;
+    text-align: left;
+}
+
+.dash-data-section{
+    padding-left: 2em;
+    padding-top: 1.5em;
+    border-bottom: 2px solid #f2f2f2;
+}
+.dash-data-title span{
+    font-size: 0.5em ;
+    color: #a7a3ac;
+    padding-left: 1em;
+}
+
+.dash-data-title{
+    font-size: 1.6em;
+}
+.dash-data-boxes{
+    margin-top: 1.5em;
+    padding-bottom: 3em;
+}
+.dash-data-box{
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+}
+.dash-data-box:not(:last-child){
+    border-right: 2px solid #f2f2f2;
+}
+
+.dash-data-num{
+    font-size: 2.8em;
+    font-weight: 300;
+    margin-bottom: -5px;
+}
+
+.dash-data-label{
+    font-size: 0.9em;
+    color: #a7a3ac;
+
+}
+
+.dash-data-graph-container{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dash-data-graph-container:first-child{
+}
+
+.dash-data-graph-half{
+    width: 45%;
+    display: inline-block;
+}
+
+
+.dash-data-graph-top-right{
+    text-align: right;
+}
+
+.dash-data-site-graph{
+    margin-top: 10px;
+    background-image: url('/visit_graph.png');
+    background-size: cover;
+    height: 260px;
+    width: 90%;
+}
+
+.dash-data-revenue-graph{
+    margin-top: 10px;
+    background-image: url('/rev_graph.png');
+    background-size: cover;
+    height: 200px;
+    width: 90%;
+}
+
+.dash-data-rev-info-container{
+    margin-top: 10px;
+}
+
+.dash-data-rev-info-box{
+    width: 24%;
+    display: inline-block;
+}
+
+.dash-data-rev-info-label{
+    color: #a7a3ac;
+    font-size: 0.8em;
+}
+
+.dash-data-rev-info-num{
+    font-size: 1.2em;
+}
