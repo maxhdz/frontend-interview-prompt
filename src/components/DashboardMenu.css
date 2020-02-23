@@ -88,8 +88,6 @@
     vertical-align: top;
 }
 
-.dash-data-graph-container:first-child{
-}
 
 .dash-data-graph-half{
     width: 45%;
@@ -133,4 +131,30 @@
 
 .dash-data-rev-info-num{
     font-size: 1.2em;
+}
+
+@media (max-width: 1200px) {
+    .dash-data-box{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    .dash-data-box:not(:last-child){
+        border: none;
+    }
+    .dash-data-graph-container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dash-top-container{
+        display: block;
+    }
+
+    .dash-title-section, .dash-dates-container {
+        width: 100%;
+        text-align: left;
+    }
+    .dash-data-section{
+        padding-left: none;
+    }
 }

@@ -34,6 +34,7 @@ import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutli
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import './DrawerMenu.css';
+import { NavLink } from 'react-router-dom';
 
 
 const drawerWidth = 240;
@@ -138,11 +139,11 @@ function DrawerMenu(props) {
             <ListItemIcon ><MailIcon className={classes.icon} fontSize="small" /></ListItemIcon>
             <ListItemText disableTypography="true" primary="Calendar" />
           </ListItem>
-          <ListItem button className={classes.listItem}>
-            <ListItemIcon><SubjectIcon className={classes.icon} fontSize="small"/></ListItemIcon>
-            <ListItemText disableTypography="true" primary="Documentation" />
-          </ListItem>
-          <ListItem button className={classes.listItem, classes.activeListItem}>
+            <ListItem button className={classes.listItem} component={NavLink} to="/docs" activeClassName={classes.activeListItem} exact>
+              <ListItemIcon><SubjectIcon className={classes.icon} fontSize="small"/></ListItemIcon>
+              <ListItemText disableTypography="true" primary="Documentation" />
+            </ListItem>
+          <ListItem button className={classes.listItem} component={NavLink} to="/" activeClassName={classes.activeListItem} exact>
             <ListItemIcon><HomeIcon className={classes.icon, classes.activeIcon} fontSize="small" /></ListItemIcon>
             <ListItemText disableTypography="true" primary="Dashboard" />
           </ListItem>
